@@ -71,6 +71,12 @@ def execute_notebook(repo_dir: Path, nb_relpath: str, env: dict, timeout_s: int,
     if not nb_path.exists():
         raise FileNotFoundError(f"Notebook not found: {nb_path}")
 
+    # modify notebook to extract just main section
+    extractor = Path("make_submission_notebook.py")
+    cmd = [sys.executable, str(extractor),"--input", str(nb_path), "--output", str(nb_path)]
+    subprocess.run(cmd,check=True)
+
+    # Now run notebook
     cmd = [
         env.get("PYTHON_EXE", sys.executable),
         "-m", "jupyter", "nbconvert",

@@ -1,2 +1,2 @@
 team,submission,auroc,auprc,brier,n,timestamp,status,notes
-Team0,checking_workflow_004,,,,,2025-12-25T16:59:07+00:00,ERROR,"Command '['/Users/kline.timothy/PyEnv/tk-dev/bin/python', '-m', 'jupyter', 'nbconvert', '--to', 'notebook', '--execute', 'faculty_workdir/Team0/Project-1/readmit30/notebooks/submission.ipynb', '--ExecutePreprocessor.timeout=1200', '--output', 'faculty_workdir/Team0/executed.ipynb']' returned non-zer"
+Team0,checking_workflow_005,0.5018144430649111,0.11053211437438304,0.11993066497215103,20449.0,2025-12-25T17:05:47+00:00,OK,
