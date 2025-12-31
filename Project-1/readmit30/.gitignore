@@ -1,6 +1,8 @@
 # data
 data/raw/
 data/private/
+Project-1/readmit/scripts/data/private
+Project-1/readmit/scripts/data/raw
 *.zip
 
 # outputs
